@@ -66,3 +66,52 @@ $regularFont: $bodyFont;
     background-color: $white;
     display: block;
 }
+
+@mixin invert-ball ($color) { border-color: $color; a { color: $color; } }
+
+@mixin link-ball {
+    display: inline-block;
+    cursor: pointer;
+
+    text-align: center;
+    border: 3px solid $black;
+    border-radius: 100%;
+    color: $white;
+
+    font-size: 1.75em;
+    width: 2em;
+    height: 2em;
+    line-height: 2.5em;
+    margin: 1em .5em;
+
+    @include mobile {
+        font-size: 1.25em;
+        height: 1.75em;
+        line-height: 2.2em;
+        width: 1.75em;
+        margin: 0 .2em;
+    }
+
+    &:nth-child(1n+1) { background-color: $purple; }
+    &:nth-child(2n+2) { background-color: $blue; }
+    &:nth-child(3n+3) { background-color: $green; }
+    &:nth-child(4n+4) { background-color: $yellow; }
+    &:nth-child(5n+5) { background-color: $pink; }
+    &:nth-child(6n+6) { background-color: $red; }
+
+    @include transition (transform ease 0.2s);
+
+    a { color: $white; text-decoration: none; }
+
+    &:hover {
+        background-color: $white;
+        transform: scale(1.2);
+
+        &:nth-child(1n+1) { @include invert-ball($purple); }
+        &:nth-child(2n+2) { @include invert-ball($blue); }
+        &:nth-child(3n+3) { @include invert-ball($green); }
+        &:nth-child(4n+4) { @include invert-ball($yellow); }
+        &:nth-child(5n+5) { @include invert-ball($pink); }
+        &:nth-child(6n+6) { @include invert-ball($red); }
+    }
+}
