@@ -1,4 +1,15 @@
 @import "_variables";
+
+.gallery-title {
+    text-align: center;
+
+    h2 { margin-bottom: 0;}
+    p {
+        margin-top: 0;
+        @include desktop { font-size: 1.5em; }
+    }
+}
+
 .gallery-grid {
     display: grid;
     @include desktop { grid-template-columns:repeat(3,1fr); }
