@@ -18,7 +18,7 @@ header {
         margin: 0;
 
         @include desktop { padding-top: 1em; }
-        @include mobile { 
+        @include mobile {
             padding-top: .75em;
             font-size: 1.75em;
         }

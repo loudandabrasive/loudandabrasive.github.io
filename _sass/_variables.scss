@@ -33,13 +33,13 @@ $bodyFont: 'Dongle', sans-serif;
 $regularFont: $bodyFont;
 
 @mixin mobile {
-    @media (max-width: $desktopMinimum) { 
+    @media (max-width: $desktopMinimum) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: $desktopMinimum) { 
+    @media (min-width: $desktopMinimum) {
         @content;
     }
 }

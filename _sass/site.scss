@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5 {
     font-weight: lighter;
 }
 
-a { 
+a {
     color:$blue;
     &:hover {
         color:$green;
@@ -60,11 +60,11 @@ a {
     @include flex-grow(1);
 
     img {
-        @include desktop { 
+        @include desktop {
             max-width: 900px;
         }
 
-        @include mobile { 
+        @include mobile {
             max-width: 100%;
             width: auto;
             height: auto;

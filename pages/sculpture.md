@@ -12,5 +12,5 @@ homepage:
 pagination:
   enabled: true
   category: Sculpture
-  per_page: 999 
+  per_page: 999
 ---
