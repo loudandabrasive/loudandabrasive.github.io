@@ -1,11 +1,6 @@
 ---
-layout: default
+layout: page
 ---
-
-<div class="gallery-title">
-    <h2>{{ page.title }}</h2>
-    <p>Click an image to see full-size and other photos of that work.</p>
-</div>
 
 <ul class="gallery-grid">
 {% assign works = paginator.posts | sort: 'date' | reverse %}

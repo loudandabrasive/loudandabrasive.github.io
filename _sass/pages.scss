@@ -1,5 +1,18 @@
 @import "_variables";
 
+.page {
+    h2.title {
+        text-align: center;
+        &.with-note { margin-bottom: 0; }
+    }
+
+    .page-note {
+        margin-top: 0;
+        text-align: center;
+        @include desktop { font-size: 1.5em; }
+    }
+}
+
 .blob-grid {
     display: grid;
 

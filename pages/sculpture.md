@@ -4,6 +4,7 @@ title: Sculpture
 permalink: /sculpture/
 lastupdate: 2024-04-14
 description: Sculpture gallery of works by Patrick McVeety-Mill
+note: Click an image to see full-size and other photos of that work.
 homepage_show: true
 homepage:
   text: "Art in three dimensions: cardboard, paper mâché, wood, and found object"
