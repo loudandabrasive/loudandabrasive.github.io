@@ -61,3 +61,17 @@
     }
 }
 
+.blob-grid-2 {
+    @extend .blob-grid;
+    @include desktop { grid-template-columns:repeat(2,1fr); }
+}
+
+.blob-grid-3 {
+    @extend .blob-grid;
+    @include desktop { grid-template-columns:repeat(3,1fr); }
+}
+
+.blob-grid-4 {
+    @extend .blob-grid;
+    @include desktop { grid-template-columns:repeat(4,1fr); }
+}

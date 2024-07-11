@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<ul id="homepages" class="blob-grid">
+<ul id="homepages" class="blob-grid-2">
 {% assign pagelinks = site.pages | where: "homepage_show","true" | sort:"lastupdate" | reverse %}
 {% for page in pagelinks %}
     <li class="colorway">
