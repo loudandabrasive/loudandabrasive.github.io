@@ -38,7 +38,7 @@ defaults:
       image: /assets/card.jpg
 
 #seo
-logo: /assets/pmcvtm-logo.png
+logo: /assets/logo.png
 author:
   name: "Loud & Abrasive"
   twitter: loudandabrasive
