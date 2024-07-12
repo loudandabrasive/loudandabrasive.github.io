@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blob
 title: Songs Where the Band Introduces Themselves with Their Names and Astrological Signs
 date: 2022-02-17 17:34:00 -0600
 categories: Playlist
