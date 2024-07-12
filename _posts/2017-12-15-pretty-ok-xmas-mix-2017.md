@@ -6,6 +6,9 @@ categories: Xmas-Mix
 color: citron
 tags: tunes playlist xmas pretty-ok
 image: /assets/postcards/2017-12-15-pretty-ok-xmas-mix-2017.jpg
+
+backurl: /playlists
+backtitle: Playlists
 ---
 
 <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Floudandabrasive%2Fpatricks-pretty-ok-xmas-mix-2017%2F" frameborder="0" ></iframe>

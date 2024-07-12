@@ -6,6 +6,9 @@ categories: Playlist
 color: citron
 tags: playlist song-lists astrology introductions
 image: /assets/postcards/2022-02-17-songs-with-astrology-introductions.jpg
+
+backurl: /playlists
+backtitle: Playlists
 ---
 
 🎵 I'm Patrick and I'm an Aquarius. 🎵
