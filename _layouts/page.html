@@ -6,6 +6,7 @@ layout: default
   {% if page.note %}
     <h2 class="title with-note">{{ page.title }}</h2>
     <p class="page-note">{{page.note}}</p>
+  {% else if page.notitle %}
   {% else %}
     <h2 class="title">{{ page.title }}</h2>
   {% endif %}
