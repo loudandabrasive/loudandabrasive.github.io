@@ -1,10 +1,22 @@
 ---
 layout: default
 ---
+
 <article class="page">
+  {% if page.note %}
+    <h2 class="title with-note">{{ page.title }}</h2>
+    <p class="page-note">{{page.note}}</p>
+  {% else if page.notitle %}
+  {% else %}
+    <h2 class="title">{{ page.title }}</h2>
+  {% endif %}
+  {{ content }}
 
-  <div>
-    {{ content }}
-  </div>
-
+  {%if page.homepage_show %}
+    <div class="backlink-container">
+      <a href="{{ '/' | relative_url }}" title="Return Home" class="back big">
+        🔙 Home
+      </a>
+    </div>
+  {% endif %}
 </article>

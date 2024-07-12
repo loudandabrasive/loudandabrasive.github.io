@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Loud & Abrasive"
-email: loudandabrasive@protonmail.com
+email: hello@loudandabrasive.com
 organization: "Loud & Abrasive & Co."
 description: > # this means to ignore newlines until "baseurl:"
   Art, Games, Software, and Bulls*** brought to you by Patrick-McVeety-Mill.
@@ -29,6 +29,31 @@ pagination:
   sort_reverse: true
   permalink: '/page/:num/'
   title: ':title - page :num'
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /assets/card.jpg
+
+#seo
+logo: /assets/logo.png
+author:
+  name: "Loud & Abrasive"
+  twitter: loudandabrasive
+  github: loudandabrasive
+social:
+  name: "Loud & Abrasive"
+  links:
+    - https://instagram.com/loudandabrasive
+    - https://twitch.com/loudandabrasive
+    - https://youtube.com/@loudandabrasive
+    - https://loudandabrasive.itch.io
+    - https://github.com/loudandabrasive
+    - https://twitter.com/loudandabrasive
+twitter:
+  username: loudandabrasive
 
 sitemap:
   filename: "/sitemap.xml"
@@ -47,7 +72,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-#  - jekyll-seo-tag
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

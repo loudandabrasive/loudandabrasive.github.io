@@ -2,26 +2,19 @@
 layout: default
 ---
 
-<div class="home-notice">
-    <h2>Pardon Our Dust</h2>
 
-    <div>
-        <p>
-            Thanks for your patience while we get the site put together.
-            There's not much here now, so your best bet is to follow the
-            social media profiles linked above and stayed tuned for updates.
-        </p>
-    </div>
-
-    <div>
-        <h3>Where is Patrick ?!?</h3>
-
-        <p>If you're here looking for
-            <a href="https://pmcvtm.com" target="_blank">Patrick McVeety-Mill</a>'s
-            blog, it has moved to <a href="https://blog.pmcvtm.com">blog.pmcvtm.com</a>.
-            Most of the URLs should be the same, so try that.
-        </p>
-    </div>
-
-    <img src="{{ "assets/under-construction.png" | relative_url }}" alt="Pixel art monster wearing hard hat" />
-</div>
+<ul id="homepages" class="blob-grid-2">
+{% assign pagelinks = site.pages | where: "homepage_show","true" | sort:"lastupdate" | reverse %}
+{% for page in pagelinks %}
+    <li class="colorway">
+        <a href="{{ page.url | relative_url }}" title="{{page.title}}">
+            <img src="{{page.homepage.image}}" />
+            <h2>
+                <i class="{{page.homepage.icon}}"></i>
+                {{page.title}}
+            </h2>
+            <!-- <p>{{page.homepage.text}}</p> --> <!--Leaving this for later maybe -->
+        </a>
+    </li>
+{% endfor %}
+</ul>

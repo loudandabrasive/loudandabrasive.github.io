@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+<div class="blob" style="text-align: left">
+  {{content}}
+
+  {% if page.backurl %}
+    {% if page.backtitle %}
+      <a href="{{ page.backurl | relative_url }}" class="back" title="Return to {{page.backtitle}} page">🔙 to {{page.backtitle}}</a>
+    {% else %}
+      <a href="{{ page.backurl | relative_url }}" class="back" title="Return">Go 🔙</a>
+    {% endif %}
+  {% endif %}
+</div>
